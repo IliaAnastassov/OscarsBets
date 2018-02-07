@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieScrapper.Web", "MovieScrapper.Web\MovieScrapper.Web.csproj", "{79940E8E-B411-45A1-98E5-FC935909D261}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieScrapper.Data", "Movie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieScrapper.Entities", "MovieScrapper.Entities\MovieScrapper.Entities.csproj", "{BB500EB4-9987-494E-9C78-B2DD47F8D49B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{2B093F1F-DD46-4AAF-86E2-3EB569ED1A39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieScrapper.Tests", "UnitTestProject\MovieScrapper.Tests.csproj", "{2B093F1F-DD46-4AAF-86E2-3EB569ED1A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0E0415D-ADA1-4764-86EF-0A480C117C1C}
 	EndGlobalSection
 EndGlobal

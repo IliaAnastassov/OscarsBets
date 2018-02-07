@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace MovieScrapper.Data
 {
-    public class ViewModelsRepository: IViewModelsRepository
+    public class ViewModelsRepository : IViewModelsRepository
     {
 
         public List<WatchedMovies> GetWatchedMoviesData()

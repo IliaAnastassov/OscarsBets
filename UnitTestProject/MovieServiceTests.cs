@@ -5,7 +5,7 @@ using Rhino.Mocks;
 using MovieScrapper.Data.Interfaces;
 using MovieScrapper.Business;
 
-namespace UnitTestProject
+namespace MovieScrapper.Tests
 {
     [TestClass]
     public class MovieServiceTests

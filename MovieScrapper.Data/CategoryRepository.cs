@@ -1,9 +1,8 @@
-﻿using MovieScrapper.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 using MovieScrapper.Data.Interfaces;
+using MovieScrapper.Entities;
 
 namespace MovieScrapper.Data
 {
@@ -17,7 +16,6 @@ namespace MovieScrapper.Data
                 ctx.SaveChanges();
             }
         }
-        
 
         public void AddMovie(int categoryId, int movieId)
         {
@@ -29,7 +27,6 @@ namespace MovieScrapper.Data
                 ctx.SaveChanges();
             }
         }
-
        
         public bool AreWinnersSet()
         {
@@ -53,7 +50,7 @@ namespace MovieScrapper.Data
             using (var ctx = new MovieContext())
             {
                 var databaseCategory = ctx.MovieCaterogries.Where(x => x.Id == id).SingleOrDefault();
-                ctx.Entry(databaseCategory).State = System.Data.Entity.EntityState.Deleted;
+                ctx.Entry(databaseCategory).State = EntityState.Deleted;
                 ctx.SaveChanges();
             }
         }
@@ -62,7 +59,7 @@ namespace MovieScrapper.Data
         {
             using (var ctx = new MovieContext())
             {
-                ctx.Entry(category).State = System.Data.Entity.EntityState.Modified;
+                ctx.Entry(category).State = EntityState.Modified;
                 ctx.SaveChanges();
             }
         }
@@ -133,6 +130,5 @@ namespace MovieScrapper.Data
                 ctx.SaveChanges();
             }
         }                               
-
     }
 }

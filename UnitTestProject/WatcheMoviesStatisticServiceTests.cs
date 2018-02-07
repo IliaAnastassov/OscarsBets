@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitTestProject
+namespace MovieScrapper.Tests
 {
     [TestClass]
     public class WatcheMoviesStatisticServiceTests
